@@ -1,0 +1,23 @@
+{
+  "name": "bun-experiments",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun src/server/index.tsx",
+    "dev": "bun --watch src/server/index.tsx",
+    "build": "bun build ./src/client/index.ts --outdir ./public/javascript --minify --minify-whitespace"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "tailwindcss": "^3.3.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@kitajs/html": "^3.0.0",
+    "@kitajs/ts-html-plugin": "^1.2.0",
+    "elysia": "^0.7.15",
+    "lit": "^2.8.0"
+  }
+}
